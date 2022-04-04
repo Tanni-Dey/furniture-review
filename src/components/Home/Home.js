@@ -7,7 +7,7 @@ const Home = () => {
     const [reviews, setReviews] = useReviews([])
     const someReview = reviews.slice(0, 3)
     return (
-        <div className=''>
+        <div>
             <div className='text-left px-10 grid md:grid-cols-2 flex items-center'>
                 <div>
                     <h2 className='text-6xl font-sans text-orange-400'>Quality Furniture</h2>
@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
                 <img src="https://minhazfurniture.com/wp-content/uploads/2021/04/pngwing.com-1.png" alt="" />
             </div>
-            <div className='bg-gray-200 p-10'>
+            <div className='bg-gray-200 px-10 py-20'>
                 <h2 className='text-4xl font-sans text-blue-900'>Customers Reviews</h2>
                 <div className='grid md:grid-cols-3 gap-5 my-10'>
                     {
