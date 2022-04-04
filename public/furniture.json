@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Michael",
+        "c_review": "I am really pleased from ordering to delivery and the ease of putting the furniture together.My daughter has even ordered settees due to the quality and ease of the process",
+        "img": "./images/img1.png",
+        "rating": 5
+    },
+    {
+        "id": 2,
+        "name": "David",
+        "c_review": "Impressive service from Furniture and Choice and highly recommend.Our new sofa was delivered within a week of ordering and the delivery men carried the sofa up 4 flights of stairs as the lift was broken.",
+        "img": "./images/img1.png",
+        "rating": 5
+    },
+    {
+        "id": 3,
+        "name": "Amelia",
+        "c_review": "We ordered a dining room table and 6 chairs. The website is easy to use. The furniture arrived on time on the date and time we were given. Very friendly delivery guys. The dining set is really nice and good quality. Very happy with this purchase and would highly recommend.",
+        "img": "./images/img1.png",
+        "rating": 5
+    },
+    {
+        "id": 4,
+        "name": "Olivia",
+        "c_review": "Came on day expected, men who delivered were very helpful, polite and pleasant. Furniture is lovely and was very well packed for delivery. Will certainly use you again. Was well informed about order. Keep up the good work",
+        "img": "./images/img1.png",
+        "rating": 5
+    },
+    {
+        "id": 5,
+        "name": "Luna",
+        "c_review": "I am really pleased from ordering to delivery and the ease of putting the furniture together.My daughter has even ordered settees due to the quality and ease of the process",
+        "img": "./images/img1.png",
+        "rating": 5
+    },
+    {
+        "id": 6,
+        "name": "Charlotte",
+        "c_review": "Very good service kept us informed throughout furniture ordered is lovely colour as ordered we r very pleased of the whole process",
+        "img": "./images/img1.png",
+        "rating": 5
+    },
+    {
+        "id": 7,
+        "name": "Isabella",
+        "c_review": "I ordered a set of fabric dining chairs in February- asked for delivery within 2 weeks.delivery on the day planned in excellent condition.Products were easy to put together and look lovely - I'm really pleased with the product.",
+        "img": "./images/img1.png",
+        "rating": 5
+    },
+    {
+        "id": 8,
+        "name": "Ella",
+        "c_review": "Very pleased with the arrival of our furniture, very cheerful delivery guys and they were happy to place the furniture exactly where I wanted it. They explained they didn't assemble it but explained how easy it was to do so & it was very easy.",
+        "img": "./images/img1.png",
+        "rating": 5
+    },
+    {
+        "id": 9,
+        "name": "Sophia",
+        "c_review": "Second time I bought my furniture, excellent customer service and delivery was on time. Definitely recommend to friends and family.",
+        "img": "./images/img1.png",
+        "rating": 5
+    }
+]
