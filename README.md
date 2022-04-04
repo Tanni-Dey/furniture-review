@@ -1,5 +1,13 @@
 # Furniture Review
-* hzg
+
+### Live Site
+[http://localhost:3000](http://localhost:3000)
+
+## Description 
+* This is a customer reviews site.
+* All reviews has in reviews page and some reviews showing in customer review section in home page.
+* Some charts has in dashboard page.
+* Some blogs has in blogs page
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
