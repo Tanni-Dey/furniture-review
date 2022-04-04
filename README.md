@@ -1,7 +1,7 @@
 # Furniture Review
 
 ### Live Site
-[http://localhost:3000](http://localhost:3000)
+[https://furniture-review.netlify.app/](https://furniture-review.netlify.app/)
 
 ## Description 
 * This is a customer reviews site.
