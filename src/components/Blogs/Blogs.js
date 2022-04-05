@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='px-10 text-left py-20'>
+        <div className='px-10 text-left py-20 h-screen'>
             <h2 className='font-sans text-2xl'>Q1: What is Context API ?</h2>
             <p className='font-serif text-xl mb-10'>Ans: Context api is a way to pass data globally in react app. Normally  props is use for passing data parent to child components. But context api can pass data without props drilling. This data set globally and can be passed this data from any child components by using useContext hook. This is easy way of passing data. </p>
             <h2 className='font-sans text-2xl'>Q2: What is Semantic Tag ?</h2>

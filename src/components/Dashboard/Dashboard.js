@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, LineChart, Pie, PieChart, PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer, Scatter, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Scatter, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
     const data = [
@@ -42,58 +42,66 @@ const Dashboard = () => {
     ]
 
     return (
-        <div className='grid md:grid-cols-2 px-10 gap-5'>
+        <div className='grid lg:grid-cols-2 pb-10 px-10 gap-5'>
             <div className='pt-20'>
                 <h2 className='text-blue-900 font-sans text-3xl pb-10'>Month wise Sell</h2>
-                <LineChart width={600} height={400} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-                    <Line type="monotone" dataKey="sell" stroke="#8884d8" />
-                    <CartesianGrid stroke="#FB923C" strokeDasharray="5 5" />
-                    <XAxis dataKey="month" />
-                    <YAxis />
-                    <Tooltip />
-                </LineChart>
+                <ResponsiveContainer width="99%" aspect={2}>
+                    <LineChart width={500} height={500} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                        <Line type="monotone" dataKey="sell" stroke="#8884d8" />
+                        <CartesianGrid stroke="#FB923C" strokeDasharray="5 5" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <Tooltip />
+                    </LineChart>
+                </ResponsiveContainer>
             </div>
             <div className='pt-20'>
                 <h2 className='text-blue-900 font-sans text-3xl pb-10'>Investment vs Revenue</h2>
-                <BarChart width={600} height={400} data={data}>
-                    <Bar dataKey="investment" stackId="a" fill="#1E3A8A" />
-                    <Bar dataKey="revenue" stackId="a" fill="#FB923C" />
-                    <XAxis dataKey="month" />
-                    <YAxis />
-                    <Tooltip />
-                </BarChart>
+                <ResponsiveContainer width="99%" aspect={2}>
+                    <BarChart width={600} height={400} data={data}>
+                        <Bar dataKey="investment" stackId="a" fill="#1E3A8A" />
+                        <Bar dataKey="revenue" stackId="a" fill="#FB923C" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <Tooltip />
+                    </BarChart>
+                </ResponsiveContainer>
             </div>
             <div className='pt-20'>
                 <h2 className='text-blue-900 font-sans text-3xl pb-10'>Investment vs Revenue</h2>
-                <PieChart width={400} height={400}>
-                    <Pie data={data} dataKey="revenue" cx="50%" cy="50%" outerRadius={60} fill="#1E3A8A" />
-                    <Pie data={data} dataKey="investment" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#FB923C" label />
-                    <Tooltip />
-                </PieChart>
+                <ResponsiveContainer width="99%" aspect={2}>
+                    <PieChart width={400} height={400}>
+                        <Pie data={data} dataKey="revenue" cx="50%" cy="50%" outerRadius={60} fill="#1E3A8A" />
+                        <Pie data={data} dataKey="investment" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#FB923C" label />
+                        <Tooltip />
+                    </PieChart>
+                </ResponsiveContainer>
             </div>
             <div className='pt-20'>
                 <h2 className='text-blue-900 font-sans text-3xl pb-10'>Investment,Revenue and Sell </h2>
-                <ComposedChart
-                    width={600}
-                    height={400}
-                    data={data}
-                    margin={{
-                        top: 20,
-                        right: 20,
-                        bottom: 20,
-                        left: 20,
-                    }}
-                >
-                    <CartesianGrid stroke="#f5f5f5" />
-                    <XAxis dataKey="month" scale="band" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Area type="monotone" dataKey="investment" fill="#8884d8" stroke="#8884d8" />
-                    <Bar dataKey="investment" barSize={20} fill="#1E3A8A" />
-                    <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
-                    <Scatter dataKey="sell" fill="#FB923C" />
-                </ComposedChart>
+                <ResponsiveContainer width="99%" aspect={2}>
+                    <ComposedChart
+                        width={600}
+                        height={400}
+                        data={data}
+                        margin={{
+                            top: 20,
+                            right: 20,
+                            bottom: 20,
+                            left: 20,
+                        }}
+                    >
+                        <CartesianGrid stroke="#f5f5f5" />
+                        <XAxis dataKey="month" scale="band" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Area type="monotone" dataKey="investment" fill="#8884d8" stroke="#8884d8" />
+                        <Bar dataKey="investment" barSize={20} fill="#1E3A8A" />
+                        <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
+                        <Scatter dataKey="sell" fill="#FB923C" />
+                    </ComposedChart>
+                </ResponsiveContainer>
             </div>
         </div>
     );
