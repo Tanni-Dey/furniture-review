@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Review from '../Review/Review';
 import useReviews from '../useReviews/useReviews';
+import furniture from '../../imges/furniture.png'
 
 const Home = () => {
     const [reviews, setReviews] = useReviews([])
@@ -15,7 +16,7 @@ const Home = () => {
                     <p className='text-gray-600 font-serif'>Furniture store offers very high quality office furniture designed to effectively incorporate computer machinery into the executive office or home office.</p>
                     <button className='p-3 border-orange-400 mt-5 text-xl rounded-md text-orange-400 font-sans border-2 hover:border-blue-900 hover:text-blue-900'>See Furniture</button>
                 </div>
-                <img src="https://minhazfurniture.com/wp-content/uploads/2021/04/pngwing.com-1.png" alt="" />
+                <img src={furniture} alt="" />
             </div>
             <div className='bg-gray-200 px-10 py-20'>
                 <h2 className='text-4xl font-sans text-blue-900'>Customers Reviews</h2>
