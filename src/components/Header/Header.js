@@ -32,10 +32,6 @@ const Header = () => {
                 <NavLink className={({ isActive }) => {
                     const active = isActive ? 'text-blue-900' : 'text-white';
                     return `block md:inline px-5 ${active}`
-                }} to="/blogs">Blogs</NavLink>
-                <NavLink className={({ isActive }) => {
-                    const active = isActive ? 'text-blue-900' : 'text-white';
-                    return `block md:inline px-5 ${active}`
                 }
                 } to="/about">About</NavLink>
             </div>
